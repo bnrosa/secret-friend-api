@@ -10,7 +10,7 @@ module.exports = function sendEmails(users){
         User.findById(user.friend)
             .then((friend) =>{
                 let data = {
-                    from:`${MAILGUN_SMTP_LOGIN}`,
+                    from:`${MG_LOGIN}`,
                     to: user.email,
                     subject: "Seu amigo secreto foi sorteado!",
                     text: `Seu amigo secreto é ${friend.name} de email ${friend.email}. Prometemos não contar para ninguém`
