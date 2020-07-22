@@ -5,7 +5,7 @@ const helmet = require('helmet');
 
 require('dotenv').config();
 
-const uri = process.env.ATLAS_URI;
+const uri = process.env.MONGODB_URI;
 const app = express();
 const port = process.env.PORT || 5000;
 
