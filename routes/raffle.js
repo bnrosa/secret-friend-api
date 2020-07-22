@@ -10,7 +10,7 @@ router.route('/').post((req, res) => {
     //Query for users with these emails
     User.find().where({email: {"$in": emails}})
         .then(users =>{
-            if(users.length < 2){
+            if(users.length < 3){
                 res.status(400).json('Você não tem usuários suficientes');
             }
             else{

@@ -3,10 +3,6 @@ function getRndInteger(min, max) {
 }
 
 module.exports = function raffleSecretFriend(userList){
-    if(userList.length < 3){
-        return false;
-    }
-
     let users = userList.map(user => user._id);
     let friends = [...users];
     const len = users.length;
