@@ -17,7 +17,8 @@ const userSchema = new Schema({
         validate: [Validator.isEmail, 'Please use a valid email address']
     },
     friend: {
-        type: String
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
     }
 }, {
     timestamps: true,
