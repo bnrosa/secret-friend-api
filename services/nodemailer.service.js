@@ -5,6 +5,7 @@ const gmail_host = process.env.GMAIL_HOST;
 const gmail_port = process.env.GMAIL_PORT;
 const gmail_user = process.env.GMAIL_USER;
 const gmail_pass = process.env.GMAIL_PASS;
+let User = require('../models/user.model');
 
 const transporter = nodemailer.createTransport({
     host: gmail_host,
