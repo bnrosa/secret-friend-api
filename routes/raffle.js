@@ -1,7 +1,7 @@
 const router = require('express').Router();
 let User = require('../models/user.model');
 const raffleSecretFriend = require('../services/raffle.service');
-const sendEmails = require('../services/mailer.service');
+const sendEmails = require('../services/nodemailer.service');
 
 router.route('/').post((req, res) => {
     //Get only emails
