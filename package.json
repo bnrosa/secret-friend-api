@@ -15,7 +15,7 @@
     "express": "^4.17.1",
     "helmet": "^3.23.3",
     "mailgun-js": "^0.22.0",
-    "mocha": "^8.0.1",
+    "mocha": "^8.4.0",
     "mongoose": "^5.9.23",
     "nodemailer": "^6.4.10",
     "validator": "^13.1.1"
